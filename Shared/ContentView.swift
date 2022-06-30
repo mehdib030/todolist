@@ -27,7 +27,7 @@ struct ContentView: View {
                         Image(systemName: "text.badge.plus")
                     }
                     .padding(.leading, 5)
-                }.padding()
+                }.padding().background(Color.green)
                 
                 List {
                         ForEach(todos) { todoEntry in
