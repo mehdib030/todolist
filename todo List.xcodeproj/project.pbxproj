@@ -15,6 +15,8 @@
 		6392BAF5286D488B00DCE868 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392BACA286D488000DCE868 /* ContentView.swift */; };
 		6392BAF6286D488B00DCE868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6392BACB286D488B00DCE868 /* Assets.xcassets */; };
 		6392BAF7286D488B00DCE868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6392BACB286D488B00DCE868 /* Assets.xcassets */; };
+		6392BB0B286D48E700DCE868 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392BB0A286D48E700DCE868 /* Item.swift */; };
+		6392BB0C286D48E700DCE868 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392BB0A286D48E700DCE868 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		6392BAEB286D488B00DCE868 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6392BAEF286D488B00DCE868 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		6392BAF1286D488B00DCE868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6392BB0A286D48E700DCE868 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 				6392BAC9286D488000DCE868 /* todo_ListApp.swift */,
 				6392BACA286D488000DCE868 /* ContentView.swift */,
 				6392BACB286D488B00DCE868 /* Assets.xcassets */,
+				6392BB0A286D48E700DCE868 /* Item.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -309,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6392BAF4286D488B00DCE868 /* ContentView.swift in Sources */,
+				6392BB0B286D48E700DCE868 /* Item.swift in Sources */,
 				6392BAF2286D488B00DCE868 /* todo_ListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6392BAF5286D488B00DCE868 /* ContentView.swift in Sources */,
+				6392BB0C286D48E700DCE868 /* Item.swift in Sources */,
 				6392BAF3286D488B00DCE868 /* todo_ListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
