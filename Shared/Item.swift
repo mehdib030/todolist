@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Item: Identifiable {
-    let id=UUID()
+struct Item: Identifiable, Decodable {
+    var id: Int
     var todo: String
 }

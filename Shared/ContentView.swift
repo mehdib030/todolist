@@ -10,17 +10,20 @@ import SwiftUI
 struct ContentView: View {
     @State private var currentTodo: String = ""
     @State private var todos: [Item] = []
+    @State private var count: Int = 0
     
     
     var body: some View {
         NavigationView {
             VStack{
                 HStack{
+                    
                     TextField("Current todo ...", text: $currentTodo).textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     Button(action: {
+                        callApi()
                         guard !self.currentTodo.isEmpty else {return}
-                        self.todos.append(Item(todo: self.currentTodo))
+                        self.todos.append(Item(id:self.count+1,todo: self.currentTodo))
                         self.currentTodo = ""
                     })
                     {
