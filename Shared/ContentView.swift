@@ -11,6 +11,8 @@ struct ContentView: View {
     @State private var currentTodo: String = ""
     @State private var todos: [Item] = []
     @State private var count: Int = 0
+    @State private var items: [Item] = []
+    
     
     
     var body: some View {
@@ -21,7 +23,8 @@ struct ContentView: View {
                     TextField("Current todo ...", text: $currentTodo).textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     Button(action: {
-                        callApi()
+                        items = callApi()
+                        //print("***"+items[0])
                         guard !self.currentTodo.isEmpty else {return}
                         self.todos.append(Item(id:self.count+1,todo: self.currentTodo))
                         self.currentTodo = ""

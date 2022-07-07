@@ -7,10 +7,12 @@
 
 import Foundation
 
-func callApi(){
+func callApi() -> [Item] {
+    
+    var items=[Item]()
     
     guard let url = URL(string: "http://localhost:3000/todos") else {
-        return
+        return items
     }
     
     let task = URLSession.shared.dataTask(with: url){
@@ -24,7 +26,8 @@ func callApi(){
             do {
                 let tasks = try decoder.decode([Item].self, from: data)
                 tasks.forEach{
-                    item in print(item.todo)
+                    item in items.append(item);
+                    //item in print(item.todo);
                 }
             } catch {
                 print(error)
@@ -35,6 +38,9 @@ func callApi(){
           //  print(string)
        // }
     }
+   
     
     task.resume()
+    return items
+   
 }
